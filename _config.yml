@@ -1,0 +1,601 @@
+title: 1st-Science-Academy-of-E-S-C
+description: |
+  <br/>
+  <a href="https://github.com/JunASAKA">
+    <i class="fab fa-github"></i>
+  </a>
+url: https://1stsaesc.zzy040330.cn
+baseurl: ""
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      categories: "_posts"
+      jekyll-theme-jun:
+        default:
+          body:
+            theme-base: theme-base-07 # https://github.com/poole/lanyon
+            layout-reverse: false
+            sidebar-overlay: true
+          append_to_head:
+            - |
+              <meta
+                name="viewport"
+                content="width=device-width,minimum-scale=1,initial-scale=1"
+              />
+              <meta
+                http-equiv="content-type"
+                content="text/html; charset=utf-8"
+              />
+              <link
+                rel="alternate"
+                href="/feed.xml"
+                title="RSS"
+                type="application/rss+xml"
+              />
+            - | # 网站图标
+              <link
+                rel="apple-touch-icon-precomposed"
+                href="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/avatar.jpg"
+              />
+              <link
+                rel="shortcuticon"
+                href="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/avatar.jpg"
+              />
+            - | # Form lanyon
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+              />
+            - | # fontawesome
+              <script
+                async="async"
+                src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+              ></script>
+            - | # live 2d
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/src/pio.css"
+              />
+              <script
+                async="async"
+                src="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/src/live2d.js"
+                onload='
+                  let pio_container = document.createElement("div");
+                  pio_container.classList.add("pio-container");
+                  pio_container.classList.add("right");
+                  pio_container.style.bottom = "-2rem";
+                  pio_container.style.zIndex = "1";
+                  document.body.insertAdjacentElement("beforeend", pio_container);
+                  let pio_action = document.createElement("div");
+                  pio_action.classList.add("pio-action");
+                  pio_container.insertAdjacentElement("beforeend", pio_action);
+                  let pio_canvas = document.createElement("canvas");
+                  pio_canvas.id = "pio";
+                  pio_canvas.style.width = "14rem";
+                  pio_canvas.width = "600";
+                  pio_canvas.height = "800";
+                  pio_container.insertAdjacentElement("beforeend", pio_canvas);
+                  let pio = new Paul_Pio({
+                    "mode": "fixed",
+                    "hidden": true,
+                    "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+                    "content": {
+                      "link": ["https:\/\/github.com\/JunASAKA"],
+                      "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+                      "hidden": true,
+                      "custom": [{
+                        "selector": "a",
+                        "type": "link",
+                      }, {
+                        "selector": ".sidebar-toggle",
+                        "text": "打开侧边栏~"
+                      }, {
+                        "selector": ".effect-info",
+                        "text": "哇，你发现了什么！"
+                      }, {
+                        "selector": "#sidebar-search-input",
+                        "text": "想搜索什么呢？"
+                      }, {
+                        "selector": "#toc",
+                        "text": "这是目录~"
+                      }, {
+                        "selector": ".page-title",
+                        "text": "这是标题~"
+                      }]
+                    },
+                    "model": [
+                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Pio/model.json",
+                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
+                      "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",
+                      "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
+                  });'
+              ></script>
+            - | # 网站背景图片
+              <style type="text/css">
+                body {
+                  transition-property: width,background-size,transform;
+                  transition-duration: .3s;
+                  transition-timing-function: ease-in-out;
+                  min-height: 100%;
+                  
+                  background-size: 100% auto;
+                  background-position: 0% 0%;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-image: url(https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/vbg.jpg);
+                }
+                @media (min-aspect-ratio: 2400/1850) {
+                  body {
+                    background-image: url(https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/bg.jpg);
+                  }
+                }
+                #.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+                    #width: calc(100% - 14rem);
+                    #background-size: calc(100% - 14rem) auto;
+                    #transform: translateX(14rem);
+                #    }
+                .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+                  transform: translateX(0);
+                }
+              </style>
+            - | # 网站字体
+              <style>
+                @font-face {
+                  font-family: "Liberation-Serif";
+                  src: url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.woff2") format("woff2"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.woff") format("woff"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.ttf") format("truetype"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.eot") format("embedded-opentype"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.svg") format("svg");
+                  font-weight: normal;
+                  font-style: normal;
+                }
+                .sidebar,
+                html {
+                  font-family: Liberation-Serif;
+                  },
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                  font-family: Liberation-Serif;
+                }
+              </style>
+            - | # 网页标题
+              <style>
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                  font-weight: bold;
+                }
+              </style>
+            - |
+              <style>
+                img {
+                  display: inline-block;
+                  margin: 0;
+                }
+              </style>
+            - | # For Chromium
+              <style>
+                ::-webkit-scrollbar {
+                  width: 3px;
+                  height: 3px;
+                }
+                ::-webkit-scrollbar-thumb {
+                  background-image: linear-gradient(45deg, Cyan 0%, Magenta 50%, Yellow 100%);
+                }
+              </style>
+            - | # 选中字体颜色
+              <style>
+                ::selection {
+                  color: White;
+                  background: Black;
+                }
+              </style>
+          sidebar:
+            disable: false
+            avatar:
+              enable: true
+              img: https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/avatar.jpg # 头像的地址
+            nav:
+              - title: '<i class="fas fa-home fa-fw"></i> ホームページ'
+                href: /
+              - title: '<i class="fas fa-tags fa-fw"></i> タグ'
+                href: /tags/
+              - title: '<i class="fas fa-archive fa-fw"></i> アーカイブ'
+                href: /archive/
+            simple_jekyll_search: # 全站搜索
+              enable: true
+              full_text_search: false
+              append: |
+                <style>
+                  #sidebar-search-input {
+                    background: none;
+                    border: none;
+                    color: White;
+                    width: 100%;
+                  }
+                  #sidebar-search-results-container {
+                    overflow: auto auto;
+                    max-height: 66.6vh;
+                  }
+                </style>
+                <input
+                  id="sidebar-search-input"
+                  placeholder="搜索博文"
+                />
+                <ol
+                  id="sidebar-search-results-container"
+                ></ol>
+                <script
+                  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.7/dest/simple-jekyll-search.min.js'
+                  async='async'
+                  onload='
+                    SimpleJekyllSearch({
+                      json: "/assets/simple-jekyll-search/search.json",
+                      searchInput: document.getElementById("sidebar-search-input"),
+                      resultsContainer: document.getElementById("sidebar-search-results-container"),
+                      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+                      limit: 999,
+                      fuzzy: true
+                    })'
+                ></script>
+            jekyll-toc:
+              enable: true
+              prepend: | # 自动折叠
+                <style>
+                  #toc {
+                    overflow: auto auto;
+                    max-height: 66.6vh;
+                  }
+                </style>
+            append_to_sidebar:
+              - |
+                <style>
+                  .sidebar-checkbox {
+                    display: none;
+                  }
+                  .sidebar-toggle {
+                    position: fixed;
+                  }
+                </style>
+              - |
+                <style>
+                  .sidebar { 
+                    overflow: scroll; 
+                    min-height: 101%;
+                  }
+                </style>
+              - |
+                <style>
+                  .effect {
+                    margin: 1rem;
+                    perspective: 900px;
+                  }
+                  .effect-info {
+                    text-align: center;
+                    backface-visibility: hidden;
+                    position: absolute;
+                    top: 0;
+                    transform-style: preserve-3d;
+                  }
+                  .effect-img {
+                    z-index: 11;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    transition: all 0.5s ease-in-out;
+                  }
+                  .effect-img:before {
+                    position: absolute;
+                    display: block;
+                  }
+                  .effect-right_to_left .effect-img {
+                    transform-origin: 0% 50%;
+                  }
+                  .effect-right_to_left:hover .effect-img {
+                    transform: rotate3d(0, 1, 0, -180deg);
+                  }
+                </style>
+              - | # 运行时间
+                <div>
+                  <i class="fas fa-cog fa-spin fa-fw"></i>
+                  <span id="run_time_day">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                  </span>天
+                  <span id="run_time_hour">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                  </span>时
+                  <span id="run_time_minute">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                  </span>分
+                  <span id="run_time_second">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                  </span>秒
+                  <script>
+                    setInterval(function (d,h,m,s,b) {
+                      function setzero(i) {
+                        return i < 10 ? "0" + i : i;
+                      }
+                      let BirthDay = new Date(b);
+                      let today = new Date();
+                      let timeold = (today.getTime() - BirthDay.getTime());
+                      let sectimeold = timeold / 1000;
+                      let secondsold = Math.floor(sectimeold);
+                      let msPerDay = 24 * 60 * 60 * 1000;
+                      let e_daysold = timeold / msPerDay;
+                      let daysold = Math.floor(e_daysold);
+                      let e_hrsold = (e_daysold - daysold) * 24;
+                      let hrsold = Math.floor(e_hrsold);
+                      let e_minsold = (e_hrsold - hrsold) * 60;
+                      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+                      let seconds = Math.floor((e_minsold - minsold) * 60);
+                      d.textContent = daysold;
+                      h.textContent = setzero(hrsold);
+                      m.textContent = setzero(minsold);
+                      s.textContent = setzero(seconds);
+                    },
+                    1000,
+                    document.getElementById("run_time_day"),
+                    document.getElementById("run_time_hour"),
+                    document.getElementById("run_time_minute"),
+                    document.getElementById("run_time_second"),
+                    "10/24/2020 00:00:00")// 时间
+                  </script>
+                </div>
+              - | # "the rule that when redistributing the program, you cannot add restrictions to deny other people the central freedoms [of free software]"
+                <div>
+                  <i class="fas fa-copyright fa-fw"></i>
+                  Copyleft 2019-2021 浅香ジュン
+                </div>
+            wordcount:
+              enable: false
+              prepend: <i class="fas fa-user-edit fa-fw"></i>
+              kilo: 千
+              unit: 字
+        page:
+          masthead:
+            enable: true
+          katex:
+            enable: true
+            append: |
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+              />
+              <style>
+                .katex-display>.katex {
+                  white-space: normal;
+                }
+              </style>
+              <script
+                src="https://cdn.jsdelivr.net/combine/npm/katex@0.12.0/dist/katex.min.js,npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+                async="async"
+                onload='renderMathInElement(document.body, { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+              ></script>
+          mermaid:
+            enable: true
+            append: |
+              <style>
+                pre.language-mermaid,
+                code.language-mermaid {
+                  display: none;
+                }
+                .mermaid {
+                  overflow: auto auto;
+                  max-width: 100%;
+                  max-height: 66.6vh;
+                }
+              </style>
+              <script
+                src="https://cdn.jsdelivr.net/npm/mermaid@8.7.0/dist/mermaid.min.js"
+                async="async"
+                onload='
+                  for(let x of document.getElementsByClassName("language-mermaid"))
+                    if(x.nodeName=="CODE")
+                    {
+                      let m = document.createElement("div");
+                      m.classList.add("mermaid");
+                      m.textContent = x.textContent;
+                      x.parentNode.insertAdjacentElement("beforebegin", m);
+                    }'
+              ></script>
+          prism:
+            enable: true
+            append: |
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/combine/npm/prismjs@1.21.0/plugins/line-numbers/prism-line-numbers.min.css,npm/prismjs@1.21.0/plugins/toolbar/prism-toolbar.min.css,npm/prismjs@1.21.0/plugins/match-braces/prism-match-braces.min.css,npm/prism-themes@1.4.0/themes/prism-nord.min.css"
+              />
+              <script
+                src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.21.0/components/prism-core.min.js,npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js,npm/prismjs@1.21.0/plugins/line-numbers/prism-line-numbers.min.js,npm/prismjs@1.21.0/plugins/toolbar/prism-toolbar.min.js,npm/prismjs@1.21.0/plugins/match-braces/prism-match-braces.min.js"
+                async="async"
+                data-autoloader-path="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/"
+                onload='
+                  for(let x of document.getElementsByClassName("content"))
+                    x.classList.add("line-numbers","match-braces");
+                  Prism.plugins.toolbar.registerButton("select-code", function (env) {
+                    let button = document.createElement("button");
+                    button.textContent = "select this " + env.language;
+                    button.addEventListener("click", function () {
+                      if (document.body.createTextRange) {
+                        let range = document.body.createTextRange();
+                        range.moveToElementText(env.element);
+                        range.select();
+                      } else if (window.getSelection) {
+                        let selection = window.getSelection();
+                        let range = document.createRange();
+                        range.selectNodeContents(env.element);
+                        selection.removeAllRanges();
+                          selection.addRange(range);
+                      }
+                    });
+                    return button;
+                  })'
+              ></script>
+          prepend:
+            - |
+              <style>
+                pre {
+                  max-height: 66.6vh;
+                  overflow: auto;
+                }
+              </style>
+            - |
+              <style>
+                .container {
+                  min-width: 66.6%;
+                }
+              </style>
+            - | # 半透明背景
+              <style>
+                .masthead,
+                .container.content {
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  margin-bottom: 1.5rem;
+                  box-shadow: 0 0 .75rem rgba(0, 0, 0, 0.1);
+                  background-color: rgba(255,255,255,.9);
+                  animation-duration: 2s;
+                  animation-name: fadeIn;
+                }
+                @keyframes fadeIn {
+                  from {
+                    opacity: 0;
+                  }
+                  to {
+                    opacity: 1;
+                  }
+                }
+              </style>
+        post:
+          date: # 文章时间
+            enable: true
+            prepend: <i class="fas fa-calendar-day fa-fw"></i>
+          wordcount: # 字数统计
+            enable: true
+            prepend: <i class="fas fa-file-word fa-fw"></i>
+            unit: 字
+          readtime: # 阅读时间
+            enable: true
+            prepend: <i class="fas fa-clock fa-fw"></i>
+            unit: 分
+            divided_by: 300
+          tags: # 文章标签
+            enable: true
+            prepend: <i class="fas fa-tag fa-fw"></i>
+          copyright: <br/>
+            <i class="fab fa-creative-commons-by fa-fw"></i>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス</a>の下に提供されています。
+            <br/>（特別な説明や転載がある作品以外）
+        tags:
+          pie_chart:
+            enable: false
+          count: true
+          toc:
+            enable: false
+          layout-reverse: false
+        archive:
+          layout-reverse: false
+          group_by: "%b %Y"
+          posts_count:
+            enable: true
+            append: 篇
+          pie_chart:
+            enable: false
+          year_count: true
+          toc:
+            enable: false
+        home:
+          append_to_section_tag:
+            - key: data-markdown
+            - key: data-separator
+              value: <!-- .slide -->
+            - key: data-separator-vertical
+              value: <!-- .slide vertical=true -->
+            - key: data-background-color
+              value: rgba(255,255,255,.9)
+          prepend: |
+            <link
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.0.2/dist/reveal.min.css,npm/reveal.js@4.0.2/dist/theme/serif.min.css"
+            />
+            <style>
+              .sidebar {
+                line-height: 1.5;
+              }
+              .reveal .slides {
+                text-align: left;
+              }
+              .reveal a {
+                color: #268BD2;
+              }
+            </style>
+          append: |
+            <script
+              async="async"
+              src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.0.2/dist/reveal.min.js,npm/reveal.js@4.0.2/plugin/markdown/markdown.min.js"
+              onload="
+              for(let x of document.getElementsByClassName('wrap'))
+                x.classList.add('reveal');
+              Reveal.initialize({
+                height: '100%',
+                hash: true,
+                mouseWheel: true,
+                navigationMode: 'linear',
+                previewLinks: true,
+                preloadIframes: true,
+                plugins: [ RevealMarkdown ]
+              });
+            "></script>
+        page404:
+          layout-reverse: false
+          prepend:
+
+collections:
+  doc_file:
+    output: true
+
+compress_html:
+  clippings: all
+  comments: []
+  endings: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+plugins:
+  #  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: https://github.com/1st-Science-Academy-of-E-S-C/jekyll-theme-jun
+
+#readme_index:
+#  with_frontmatter: true
+
+permalink: /:title/
+future: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      disable: true
+      line_numbers: false
+    span:
+      disable: true
