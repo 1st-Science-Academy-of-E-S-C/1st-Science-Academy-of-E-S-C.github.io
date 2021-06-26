@@ -1,4 +1,4 @@
-title: 1st-Science-Academy-of-E-S-C
+title: JunASAKA's Blog
 description: |
   <br/>
   <a href="https://github.com/JunASAKA">
@@ -37,11 +37,11 @@ defaults:
             - | # 网站图标
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/avatar.jpg"
+                href="https://cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/avatar.jpg"
               />
               <link
                 rel="shortcuticon"
-                href="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/avatar.jpg"
+                href="https://cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/avatar.jpg"
               />
             - | # Form lanyon
               <link
@@ -56,11 +56,11 @@ defaults:
             - | # live 2d
               <link
                 rel="stylesheet"
-                href="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/src/pio.css"
+                href="https://cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/src/pio.css"
               />
               <script
                 async="async"
-                src="https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/src/live2d.js"
+                src="https://cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/src/live2d.js"
                 onload='
                   let pio_container = document.createElement("div");
                   pio_container.classList.add("pio-container");
@@ -124,11 +124,11 @@ defaults:
                   background-position: 0% 0%;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
-                  background-image: url(https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/vbg.jpg);
+                  background-image: url(https://cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/vbg.jpg);
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   body {
-                    background-image: url(https://cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/bg.jpg);
+                    background-image: url(https://cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/bg.jpg);
                   }
                 }
                 #.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
@@ -144,11 +144,11 @@ defaults:
               <style>
                 @font-face {
                   font-family: "Liberation-Serif";
-                  src: url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.woff2") format("woff2"),
-                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.woff") format("woff"),
-                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.ttf") format("truetype"),
-                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.eot") format("embedded-opentype"),
-                       url("https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/fonts/Liberation-Serif.svg") format("svg");
+                  src: url("https:\/\/cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/fonts/Liberation-Serif.woff2") format("woff2"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/fonts/Liberation-Serif.woff") format("woff"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/fonts/Liberation-Serif.ttf") format("truetype"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/fonts/Liberation-Serif.eot") format("embedded-opentype"),
+                       url("https:\/\/cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/fonts/Liberation-Serif.svg") format("svg");
                   font-weight: normal;
                   font-style: normal;
                 }
@@ -204,7 +204,7 @@ defaults:
             disable: false
             avatar:
               enable: true
-              img: https:\/\/cdn.jsdelivr.net/gh/1st-Science-Academy-of-E-S-C/1st-Science-Academy-of-E-S-C.github.io/assets/avatar.jpg # 头像的地址
+              img: https:\/\/cdn.jsdelivr.net/gh/JunASAKA/JunASAKA.github.io/assets/avatar.jpg # 头像的地址
             nav:
               - title: '<i class="fas fa-home fa-fw"></i> ホームページ'
                 href: /
@@ -581,7 +581,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-remote_theme: https://github.com/1st-Science-Academy-of-E-S-C/jekyll-theme-jun
+remote_theme: https://github.com/JunASAKA/jekyll-theme-jun
 
 #readme_index:
 #  with_frontmatter: true
