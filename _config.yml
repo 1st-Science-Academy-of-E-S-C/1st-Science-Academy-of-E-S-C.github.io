@@ -354,7 +354,7 @@ defaults:
               - | # "the rule that when redistributing the program, you cannot add restrictions to deny other people the central freedoms [of free software]"
                 <div>
                   <i class="fas fa-copyright fa-fw"></i>
-                  Copyleft 2019-2021 浅香ジュン
+                  Copyleft 2019-Now 浅香ジュン
                 </div>
             wordcount:
               enable: false
